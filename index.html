@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Premium SEO & Meta Tags -->
+    <title>Komil Sultonov | Product Manager & Strategist</title>
+    <meta name="description" content="Portfolio of Komil Sultonov - Product Manager & Owner specializing in Fintech, AI/ML, and Data Analytics.">
+    <meta property="og:title" content="Komil Sultonov | Premium Portfolio">
+    <meta property="og:description" content="Driving product success through data, strategy, and AI innovation.">
+    <meta property="og:image" content="./assets/avatar-D_298UBG.png">
+    <meta name="theme-color" content="#3b82f6">
+
+    <!-- Premium SVG Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%231d4ed8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23grad)'/%3E%3Cpath d='M32 25v50M32 50l38-25M32 50l38 25' stroke='white' stroke-width='12' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              primary: '#3b82f6',
+              dark: '#0a0a0a',
+              light: '#fafafa',
+            },
+            animation: {
+              'spin-slow': 'spin 20s linear infinite',
+              'marquee': 'marquee 25s linear infinite',
+              'noise': 'noise 0.2s infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+              noise: {
+                '0%': { transform: 'translate(0, 0)' },
+                '10%': { transform: 'translate(-5%, -5%)' },
+                '20%': { transform: 'translate(-10%, 5%)' },
+                '30%': { transform: 'translate(5%, -10%)' },
+                '40%': { transform: 'translate(-5%, 15%)' },
+                '50%': { transform: 'translate(-10%, 5%)' },
+                '60%': { transform: 'translate(15%, 0)' },
+                '70%': { transform: 'translate(0, 10%)' },
+                '80%': { transform: 'translate(-15%, 0)' },
+                '90%': { transform: 'translate(10%, 5%)' },
+                '100%': { transform: 'translate(5%, 0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --cursor-size: 20px;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+      h1, h2, h3, h4, .font-display {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+      
+      /* 3D Perspective Utility - Essential for the Window Effect */
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      
+      /* Refined Animated Grain Texture Overlay */
+      .grain-overlay {
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.02; /* Reduced opacity for better performance perception */
+        mix-blend-mode: overlay;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        animation: noise 0.2s steps(3) infinite;
+        will-change: transform; /* Hardware accel */
+      }
+      
+      .glass-panel {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      /* Custom Premium Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3b82f6;
+        border-radius: 10px;
+      }
+      
+      ::selection {
+        background: #3b82f6;
+        color: white;
+      }
+
+      /* View Transitions for Dark Mode */
+      ::view-transition-old(root),
+      ::view-transition-new(root) {
+        animation: none;
+        mix-blend-mode: normal;
+      }
+      /* Always keep the new view on top for the expansion effect */
+      ::view-transition-new(root) {
+        z-index: 2147483646;
+      }
+      ::view-transition-old(root) {
+        z-index: 1;
+      }
+      
+      /* 3D Cube Styles */
+      .transform-style-3d {
+        transform-style: preserve-3d;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.7"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-scOuDUsc.js"></script>
+</head>
+  <body class="bg-[#fafafa] text-slate-900 dark:bg-[#050505] dark:text-slate-200 transition-colors duration-0">
+    <div id="root"></div>
+    <div class="grain-overlay"></div>
+</body>
+</html>
